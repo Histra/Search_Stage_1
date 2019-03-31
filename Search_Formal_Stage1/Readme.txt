@@ -1,25 +1,26 @@
-1. ÿ�������Ѹ��������Ժͺ����������͡����ֺͲ����б�����Ҫ�޸�
-2. AStar�಻Ҫ���κ��޸�
-3. ÿ����Ϊÿ�����⽨һ��Package, �����Ϊǰ׺����������Ϊ��׺, ȫ����Сд��ĸ��
-        ���磺g01.problem.npuzzle, g01.problem.blocks����ֻ�滻��ţ��������䡣  
+1. 每个类中已给出的属性和函数，其类型、名字和参数列表均不要修改
+2. AStar类不要作任何修改
+3. 每个组为每个问题建一个Package, 以组号为前缀，问题名字为后缀, 全部用小写字母。
+        例如：g01.problem.npuzzle, g01.problem.blocks。请只替换组号，其他不变。  
 
-/*����Ϊ��ʦ���ڵ�һ�׶ε�Ҫ��*/
+/*以上为老师对于第一阶段的要求*/
 
 /***********************************************************************************/
 
-NPuzzle������package g11.problem.npuzzle����;
-NPuzzleAction��̳���Action�࣬NPuzzleProblem�̳���Problem�࣬ NPuzzleState�̳���State��
-���׶β���A*�㷨���Կռ�Ҫ�󼫸ߡ�
-����������Ľ׵�ĳЩ��ʼ״̬������ֱ��ڴ������
-�����϶����еĳ�ʼ״̬�ɽ⣬���ǻ��ڲ�����ʱ���ڴ�������¡�
+NPuzzle问题在package g11.problem.npuzzle里面;
+NPuzzleAction类继承了Action类，NPuzzleProblem继承了Problem类， NPuzzleState继承了State；
+本阶段采用A*算法，对空间要求极高。
+因而，对于四阶的某些初始状态求解会出现爆内存的现象。
+理论上对所有的初始状态可解，这是基于不考虑时间内存的条件下。
 
-�½��ܳ����ע���
-1.�����������flag��������������ļ�out.txt�������޸�֮���ý��������ļ���
-2.Ĭ�ϲ���3����������ԣ��������4�������⣬��ע�͵��������е�test3Puzzle()�����test4Puzzle()ע�͡�
-3.test3Puzzle()������goalstate������״̬��initstate�ǳ�ʼ״̬������䶯��������Ӧλ�ô��޸ġ�
-����ذ��չ�����ȷ���룬���򲻱�֤�ܱ�����������ȷ��
-4.������߽׵���⣬����testNPuzzle��ֱ���޸����飬������֤�ڿɽ�ʱ���ڽ���𰸡�
-5.�����������������������Ľ�������ϵQQ1497058369��
+下介绍程序的注意项：
+1.主函数里面的flag变量用于输出到文件out.txt。可以修改之，让结果输出到文件。
+2.默认测试3数码问题测试，如需测试4数码问题，请注释掉主函数中的test3Puzzle()，解除test4Puzzle()注释。
+3.test3Puzzle()函数中goalstate是最终状态，initstate是初始状态。如需变动，请在相应位置处修改。
+请务必按照规则正确输入，否则不保证能编译或者求解正确。
+4.如需更高阶的求解，可在testNPuzzle中直接修改数组，但不保证在可解时间内解出答案。
+5.如有其它问题或有其它建议改进，请联系QQ1497058369。
 
 
-���׶δ������ϴ���GitHub.
+本阶段代码已上传至GitHub.
+16020030175王刚  20190331
