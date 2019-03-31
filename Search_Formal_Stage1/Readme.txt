@@ -22,5 +22,5 @@ NPuzzleAction类继承了Action类，NPuzzleProblem继承了Problem类， NPuzzl
 5.如有其它问题或有其它建议改进，请联系QQ1497058369。
 
 
-本阶段代码已上传至GitHub.
+本阶段代码已上传至GitHub：https://github.com/Histra/Search_Stage_1.
 16020030175王刚  20190331
